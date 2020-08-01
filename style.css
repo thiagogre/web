@@ -1,0 +1,1044 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap');
+    /* Social Media -> LOGO */ /*https://fontawesome.com/v4.7.0/icons/*/
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+    /*START Section Title*/
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    margin: 0 0 5px;
+    position: relative;
+}
+.section-title h1:before{
+    content: '';
+    left: 0;
+    right: 33%;
+    position: absolute;
+    height: 2px;
+    background-color: #7c7c7c;
+    bottom: 0px;
+}
+    /*END Section Title*/
+   
+header{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-bottom: 2px solid black;
+    padding: 0px 15px;
+    z-index: 11;
+    background-color: white;
+}
+
+    /*START CODE-SCRIPT.JS*/
+header.fixed{
+    background-color: white;
+    position: fixed;
+    border-color: #f0f0f0;
+    animation: fixHeader 1s ease;
+    z-index: 100;
+}
+@keyframes fixHeader{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+header.fixed nav ul li a{
+    color: black;
+}
+header.fixed nav ul li a:before{
+    background-color: #7c7c7c;
+}
+    /*END CODE-SCRIPT.JS*/
+
+header .row{
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+header .logo-py{
+    position: relative;
+}
+header .logo-py img{
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+}
+header nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+header nav ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 60px;
+    color: black;
+    display: block;
+    font-weight: 600;
+    position: relative;
+}
+header nav ul li a:before{
+    content: '';
+    height: 3px;
+    background-color: black;
+    width:0%;
+    position: absolute;
+    right: 0px;
+    bottom:-1px;
+}
+header nav ul li a:hover:before{
+    width: 100%;
+    left: 0%;
+    background-color: #7c7c7c;
+}
+header nav ul li a.active:before{
+    width: 100%;
+    left: 0%;
+}
+
+    /*START Home*/
+.home{
+    min-height:100vh;
+    background-color: white;
+    background-image: url("img/home/fundo-abstrect.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.home .full-screen{
+    min-height: 100vh;
+}
+.home .home-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.home .home-content .block{
+    padding-left: 50px;
+    flex:0 0 30%;
+    max-width: 100%;
+    margin-top: 20%;
+    border-radius: 50%;
+    border-left: 5px solid #000000;
+    border-right: 5px solid #000000;
+}
+.home .home-content .block h6{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    line-height: 1.2;
+}
+.home .home-content .block h1{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+.home .home-content .block h3{
+    color: #000000;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    padding: 0;
+    line-height: 1.2;
+}
+.home .home-content .social-media{
+    padding-top:20px;
+    text-align: center;
+}
+.home .home-content .social-media a .fa-linkedin{
+    background-color: #0090e4;
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    margin: 0 1px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.home .home-content .social-media a .fa-github{
+    background-color: rgb(88, 88, 88);
+    border-radius: 50%;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    margin: 0 1px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.home .home-content .social-media a .fa:hover{
+    background-color: black;
+    color: white;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+    /*END Home*/
+
+    /*START About*/
+.about-me{
+    background-color: white;
+    padding: 100px 15px;
+}
+.text-uppercase{
+    text-transform: uppercase!important;
+}
+.about-me .section-title p.small{
+    display: block;
+    font-size: 14px;
+    color: #838383;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.about-me .about-content .img{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding-top: 7px;
+    
+}
+.about-me .about-content .img img{
+    width: 100%;
+    display: block;
+    /*  Turn image  */
+/*    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);    */
+}
+.about-me .about-content .text{
+    flex: 0 0 66%;
+    max-width: 66.66%;
+    padding-left: 30px;
+    color: black;
+}
+.about-me .about-content .text h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    color: black;
+}
+.about-me .about-content .text h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 15px;
+    color: black;
+}  
+.about-me .about-content .text h6 span{
+    color: #7c7c7c;
+}
+.about-me .about-content .text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 0 0 20px;
+}
+.about-me .about-content .text .info .list p{
+    margin: 0;
+}
+.about-me .about-content .text .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.about-me .about-content .text .info .list{
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #838383;
+    padding-bottom: 10px;
+}
+.about-me .about-content .text .info .list label{
+    padding-right: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+}
+    /*END About*/
+
+    /*START Training*/
+.training{
+    background-color: #f0f0f0;
+    padding: 100px 15px 70px;
+}
+.training .section-title h1:before{
+    left: 30%;
+}
+.training .training-contents{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.training .training-contents .box{
+    background-color: white;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+.training .training-contents .box::before{
+    content: '';
+    height: 2px;
+    background-color: #7c7c7c;
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    left:0;
+    right:0;
+    margin: auto;
+    transition: all .5s ease;
+}
+.training .training-contents .box:hover::before{ 
+    width: 98%;
+}
+.training .training-contents .box .icon{
+    height: 60px;
+    width: 60px;
+    background-color: #7c7c7c;
+    border-radius: 50%;
+    margin: 15px auto 20px;
+}
+.training .training-contents .box .icon .fa{
+    font-size: 40px;
+    color: whitesmoke;
+    line-height: 60px;
+}
+.training .training-contents .box h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+    padding-bottom: 15px;
+}
+.training .training-contents .box h4{
+    text-transform: uppercase;
+}
+.training .training-contents .box h5{
+    text-transform: uppercase;
+}
+.training .training-contents .box p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 10px 0 10px;
+}
+.text-center{
+    text-align: center!important;
+}
+.text-left{
+    text-align: left!important;
+}
+.text-right{
+    text-align: right!important;
+}
+.training .training-contents .box .img-academic img{
+    padding-top: 15px;
+    width: 30%;
+}
+    /*END About*/
+
+    /*START Message*/
+.message-text{
+    background-color: black;
+    padding: 40px 15px;
+}
+.message-text .text{
+    flex: 0 0 80%;
+    max-width: 80%;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    line-height: 35px;
+    padding-left: 10px;
+}
+.message-text .button{
+    flex: 0 0 20%;
+    max-width: 20%;
+    text-align: right;
+    padding-right: 10px;
+}
+.message-text .button a{
+    border-radius: 4px;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+}
+.message-text .button a:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+    /*END Message*/
+
+    /*START Skills*/
+.skills{
+    background-color: whitesmoke;
+    padding:100px 15px;
+}   
+.skills .section-title h1:before{
+    left: 30%;
+}
+.skills .img{
+    padding-top: 50px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills .img .img-box{
+    align-items: center;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+.skills .img .img-box img{
+    width: 100%;
+}
+    /*END Skills*/
+
+    /*START Hobbies */
+.hobbies{
+    padding: 100px 7px;
+    background-color: white;
+}
+.hobbies .section-title h1:before{
+    left: 30%;
+}
+.hobbies .filter-buttons{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.hobbies .filter-buttons ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.hobbies .filter-buttons ul li{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-bottom: 0;
+}
+.hobbies .filter-buttons ul li.active{
+    color: #7c7c7c;
+    border-bottom: 2px solid #7c7c7c;
+}
+.hobbies .filter-buttons{
+    margin-bottom: 30px;
+}
+.hobbies .filter-buttons ul li:before{
+    content: '';
+    height: 3px;
+    background-color: #7c7c7c;
+    width:0%;
+    position: absolute;
+    right: 0px;
+    bottom:-1px;
+    transition: all .5s ease;
+}
+.hobbies .filter-buttons ul li:hover{
+    color: #7c7c7c;
+    border-bottom: 2px solid #7c7c7c;
+}
+.hobbies .hobbies-gallery{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hobbies .hobbies-gallery .item{
+    flex: 0 0 20%;
+    max-width: 20%;
+    position: relative;
+    padding: 8px;
+}
+.hobbies .hobbies-gallery .item .inner{
+    position: relative;
+}
+.hobbies .hobbies-gallery .item img{
+    width: 100%;
+    display: block;
+}
+.hobbies .hobbies-gallery .item .overlay{
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0 , 0 , 0, 0.6);
+    z-index: 10;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.hobbies .hobbies-gallery .item:hover .overlay{
+    opacity: 1;
+}
+.hobbies .hobbies-gallery .item .overlay .fa{
+    width: 50px;
+    height: 50px;
+    background-color: #7c7c7c;
+    color: whitesmoke;
+    display: inline-block;
+    text-align: center;
+    line-height:  50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: galleryIcon .8s ease;
+}
+.hobbies .hobbies-gallery .item:hover .overlay .fa{
+    -webkit-animation: galleryIcon .8s ease;
+    animation: galleryIcon .8s ease;
+}
+@keyframes galleryIcon{
+    0%{
+        tranform: translateY(-20px);opacity: 0;
+    }
+    100%{
+        tranform: translateY(0);opacity: 1;
+    }
+}
+.hobbies .hobbies-gallery .item .overlay h4{
+    margin-top: 15px;
+    font-size: 25px;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 600;
+    animation: galleryText .8s ease;
+}
+.hobbies .hobbies-gallery .item:hover .overlay h4{
+    -webkit-animation: galleryIcon .8s ease;
+    animation: galleryIcon .8s ease;
+}
+@keyframes galleryText{
+    0%{
+        tranform: translateY(20px);opacity: 0;
+    }
+    100%{
+        tranform: translateY(0);opacity: 1;
+    }
+}
+    /*END Hobbies*/
+
+    /*START Testimonials*/
+.testimonials{
+    padding: 100px 7px;
+    background-color: whitesmoke;
+}
+.testimonials .section-title h1:before{
+    left: 30%;
+}
+.testimonials .testimonials-content{   
+    position: relative;
+    overflow: hidden;
+    flex:0 0 100%;
+    max-width: 100%;
+    width: 100%;
+}
+.testimonials .img img{
+    flex: 0 0 30%;
+    max-width: 30%;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+.testimonials .testimonials-content .testimonials-slider .slide{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-bottom: 45px;
+    padding: 30 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    float: left;
+    width: 100%;
+}
+.testimonials .testimonials-content .testimonials-slider .slide .text{
+    flex: 0 0 70%;
+    max-width: 70%;
+    width:100%;
+    align-items: center;
+}
+.testimonials .testimonials-content .testimonials-slider .slide .img img{
+    justify-content: space-between;
+    flex: 0 0 90%;
+    max-width: 90%;
+    width: 100%;
+}
+.testimonials .testimonials-content .testimonials-slider .slide p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 0;
+}
+.testimonials .testimonials-content .testimonials-slider .slide h6{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;   
+    margin: 10px 0 10px;
+}
+.testimonials .testimonials-content .testimonials-slider .slide .text .social-media a .fa-linkedin{
+    background-color: #0090e4;
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 35px;
+    height: 35px;
+    width: 35px;
+    margin: 0 1px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.testimonials .testimonials-content .testimonials-slider .slide .text .social-media a .fa-github{
+    background-color: rgb(88, 88, 88);
+    border-radius: 50%;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    height: 35px;
+    width: 35px;
+    margin: 0 1px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.testimonials .testimonials-content .testimonials-slider .slide .text .social-media a .fa:hover{
+    background-color: black;
+    color:white;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+    /*END Testimonials*/
+    .testimonials .testimonials-content{   
+        position: relative;
+        overflow: hidden;
+        flex:0 0 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .testimonials .img img{
+        flex: 0 0 30%;
+        max-width: 30%;
+        border-radius: 50%;
+        border: 2px solid #000000;
+    }
+    .testimonials .testimonials-content .testimonials-slider .slide{
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-top: 30px;
+        padding-left: 30px;
+        margin-bottom: 45px;
+        padding: 30 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        float: left;
+        width: 100%;
+    }
+    .testimonials .testimonials-content .testimonials-slider .slide .text{
+        flex: 0 0 70%;
+        max-width: 70%;
+        width:100%;
+        align-items: center;
+    }
+    .testimonials .testimonials-content .testimonials-slider .slide .img img{
+        justify-content: space-between;
+        flex: 0 0 90%;
+        max-width: 90%;
+        width: 100%;
+    }
+    .testimonials .testimonials-content .testimonials-slider .slide p{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #838383;
+        margin: 0;
+    }
+    .testimonials .testimonials-content .testimonials-slider .slide h6{
+        font-size: 16px;
+        font-weight: 600;
+        color: black;   
+        margin: 10px 0 10px;
+    }
+    /*START Contact*/
+.contact{
+    padding: 100px 7px;
+    background-color: white;
+}
+.contact .section-title h1:before{
+    left: 30%;
+}
+.contact .contact-form{
+    background-color: white;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 40px;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    text-align: center;
+}
+.contact .contact-form img{
+    flex: 0 0 20%;
+    max-width: 20%;
+    border-radius: 100%;
+    border: 2px solid #000000;
+}
+.contact .contact-form .text{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+.contact .contact-form .text h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.contact .contact-form .text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 0px;
+}
+.contact .contact-form .form-control{
+    margin-bottom: 15px;
+    border: 1px solid #dfdfdf;
+    padding: 6px 12px;
+    font-size: 14;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.contact .contact-form textarea.form-control{
+    height: 140px;
+}
+.contact .contact-form .form-control::placeholder{
+    color: #838383;
+}
+.contact .contact-form .button a{
+    border-radius: 5px;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: black;
+}
+.contact .contact-form .button a:hover{
+    border-color: #000000;
+    background-color: white;
+    color: black;
+}
+    /*END Contact*/
+
+    /*START Footer*/
+footer{
+    padding: 0 15px;
+    background-color: #7c7c7c;
+}
+footer .social{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+footer .social a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px 10px;
+    transition: all .5s ease;
+    font-size: 25px;
+}
+footer .social a:hover{
+    color: whitesmoke;
+}
+/*COPYRIGHT*/
+.copyright{
+    border-top: 1px solid black;
+    background-color: #7c7c7c;
+    padding: 15px;
+}
+.copyright p{
+    color: black;
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+    /*END Footer*/
+
+    /*START Responsive*/
+
+@media(max-width: 800px){
+    header{
+        display: flex;
+    }
+    header nav ul li{
+        display: none;
+        margin-left: 0;
+    }
+    header nav ul li a{
+        display: none;
+    }
+    header .logo-t{
+        padding-left: 0;
+    }
+
+    .home .home-content .block{
+        flex: 0 0 50%;
+    }
+
+    .about-me .about-content .img{
+        flex: 0 0 0;
+        max-width: 0;
+    }
+    .about-me .about-content .text{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 30px;
+        color: black;
+    }
+    .about-me .about-content .text .info .list{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .training{
+        background-color: #e0e0e0;
+    }
+    .training .training-contents .box{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+        border: 1px solid #eeeeee;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+    }
+
+    .skills .img{
+        padding-top: 10px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .skills .img .img-box{
+        align-items: center;
+        flex: 0 0 45%;
+        max-width: 45%;
+        padding-top: 30px;
+    }
+    .skills .img .img-box img{
+        width: 100%;
+    }
+
+    .hobbies{
+        background-color: #e0e0e0;
+    }
+    .hobbies .hobbies-gallery .item{
+        flex: 0 0 50%;
+        max-width: 50%;
+        position: relative;
+        padding: 8px;
+    }
+
+    .message-text{
+        padding: 10px 15px;
+    }
+    .message-text .text{
+        font-size: 12px;
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+    .message-text .button{
+        flex: 0 0 30%;
+        max-width: 30%;
+        text-align: center;
+        padding-top: 14px;
+    }
+    .message-text .button a{
+        border-radius: 4px;
+        border: 1.5px solid whitesmoke;
+        color: whitesmoke;
+        padding: 10px 5px;
+        padding-top: 12px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .testimonials .testimonials-content{   
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        flex:0 0 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .testimonials .img{
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+    .testimonials .testimonials-content .testimonials-slider .slide{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 30px;
+        margin-bottom: 45px;
+        padding: 30 20px;
+        display: inline-block;
+        flex-wrap: wrap;
+        float: none;
+        width: 100%;
+    }
+    .testimonials .testimonials-content .testimonials-slider .slide .text{
+        flex: 0 0 90%;
+        max-width: 90%;
+        width:100%;
+    }
+    .testimonials .testimonials-content .testimonials-slider .slide .img img{
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: 100%;
+    }
+
+    .contact .contact-form img{
+        flex: 0 0 50%;
+        max-width: 50%;
+        border-radius: 100%;
+        border: 2px solid #000000;
+    }
+    .contact .contact-form .text h2{
+        font-size: 17px;
+    }
+    .contact .contact-form .text p{
+        font-size: 13px;
+    }
+
+    footer .social a{
+        font-size: 15px;
+    }
+}
+@media(max-width: 440px){
+    .home .home-content .block{
+        flex: 0 0 80%;
+    }
+
+    .message-text .text{
+        font-size: 10px;
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+    .message-text .button{
+        flex: 0 0 20%;
+        max-width: 20%;
+        padding-top: 10px;
+    }
+    .message-text .button a{
+        padding: 5px 5px;
+        padding-top: 8px;
+        font-size: 10px;
+    }
+
+    .hobbies .hobbies-gallery .item .overlay h4{
+        font-size: 15px;
+    }
+}
+@media(max-width: 337px){
+    .message-text .text{
+        font-size: 9px;
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+    .message-text .button{
+        flex: 0 0 20%;
+        max-width: 20%;
+        padding-top: 10px;
+    }
+    .message-text .button a{
+        padding: 5px 5px;
+        background-color: whitesmoke;
+    }
+}
