@@ -597,6 +597,7 @@ header nav ul li a.active:before{
     /*END Hobbies*/
 
     /*START Testimonials*/
+/*
 .testimonials{
     padding: 100px 7px;
     background-color: whitesmoke;
@@ -686,57 +687,9 @@ header nav ul li a.active:before{
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
+*/
     /*END Testimonials*/
-    .testimonials .testimonials-content{   
-        position: relative;
-        overflow: hidden;
-        flex:0 0 100%;
-        max-width: 100%;
-        width: 100%;
-    }
-    .testimonials .img img{
-        flex: 0 0 30%;
-        max-width: 30%;
-        border-radius: 50%;
-        border: 2px solid #000000;
-    }
-    .testimonials .testimonials-content .testimonials-slider .slide{
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding-top: 30px;
-        padding-left: 30px;
-        margin-bottom: 45px;
-        padding: 30 20px;
-        display: flex;
-        flex-wrap: nowrap;
-        float: left;
-        width: 100%;
-    }
-    .testimonials .testimonials-content .testimonials-slider .slide .text{
-        flex: 0 0 70%;
-        max-width: 70%;
-        width:100%;
-        align-items: center;
-    }
-    .testimonials .testimonials-content .testimonials-slider .slide .img img{
-        justify-content: space-between;
-        flex: 0 0 90%;
-        max-width: 90%;
-        width: 100%;
-    }
-    .testimonials .testimonials-content .testimonials-slider .slide p{
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 24px;
-        color: #838383;
-        margin: 0;
-    }
-    .testimonials .testimonials-content .testimonials-slider .slide h6{
-        font-size: 16px;
-        font-weight: 600;
-        color: black;   
-        margin: 10px 0 10px;
-    }
+
     /*START Contact*/
 .contact{
     padding: 100px 7px;
