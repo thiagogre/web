@@ -3,7 +3,9 @@
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/thiagogre/web">
   </a>
     
-   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+   <a href="https://github.com/thiagogre/web/blob/master/LICENSE">
+   	<img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+   </a>
 
    <a href="https://github.com/thiagogre/web/stargazers">
     <img alt="Stargazers" src="https://img.shields.io/github/stars/thiagogre/web?style=social">
