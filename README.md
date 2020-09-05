@@ -20,7 +20,7 @@
 	🚧 My First Web 🚧 In Progress... 🚀
 </h2>
 <div align="center">
-	<img alt="edit" width="700px" title="#MyWeb" src="./img/web.gif">
+	<img alt="edit" width="100%" title="#MyWeb" src="./img/web.gif">
 	<img alt="edit" height="380px" title="#MyWebMobile" src="./img/mobile.gif">
 </div>
 
