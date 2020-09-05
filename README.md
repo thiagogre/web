@@ -19,15 +19,11 @@
 <h2 align="center"> 
 	🚧 My First Web 🚧 In Progress... 🚀
 </h2>
-<h4 align="center">
-	  <img alt="edit" title="#MyWeb" src="./img/web.gif">
-</h4>
-<h3 align="center"> 
-	📱 Mobile 📱
-</h3>
-<h4 align="center">
-	  <img alt="edit" height="500px" title="#MyWebMobile" src="./img/mobile.gif">
-</h4>
+<div align="center">
+	<img alt="edit" width="700px" title="#MyWeb" src="./img/web.gif">
+	<img alt="edit" height="380px" title="#MyWebMobile" src="./img/mobile.gif">
+</div>
+
 
 <p align="center">
  <a href="#-about-the-project">About</a> •
