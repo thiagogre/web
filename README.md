@@ -16,8 +16,18 @@
   </a>
 </p>
 
-<h4 align="center"> 
+<h2 align="center"> 
 	🚧 My First Web 🚧 In Progress... 🚀
+</h2>
+<h4 align="center">
+	  <img alt="edit" title="#MyWeb" src="./img/web.gif" style="max-width: 100%;">
+</h4>
+</br>
+<h3 align="center"> 
+	🚀 Mobile 🚀
+</h3>
+<h4 align="center">
+	  <img alt="edit" title="#MyWeb" src="./img/mobile.gif" style="max-width: 60%;">
 </h4>
 
 <p align="center">
