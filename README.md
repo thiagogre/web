@@ -26,7 +26,7 @@
 	📱 Mobile 📱
 </h3>
 <h4 align="center">
-	  <img alt="edit1" title="#MyWebMobile" src="./img/mobile.gif" style="max-width: 40%;">
+	  <img alt="edit1" title="#MyWebMobile" src="./img/mobile.gif" style="height: 600px;">
 </h4>
 
 <p align="center">
