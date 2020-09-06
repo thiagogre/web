@@ -23,7 +23,7 @@
 	<img alt="edit" width="100%" title="#MyWeb" src="./img/web.gif">
 	<img alt="edit" height="380px" title="#MyWebMobile" src="./img/mobile.gif">
 </div>
-
+</br>
 
 <p align="center">
  <a href="#-about-the-project">About</a> •
