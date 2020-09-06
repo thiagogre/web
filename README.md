@@ -38,7 +38,7 @@
 
 ## 💻 About the project
 
-My First Web is made with Html, CSS and Javascript, where you can see better about me. 
+My First Web is made with Html, CSS and Javascript, where you can see about me more. 
 
 ---
 
