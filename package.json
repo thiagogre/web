@@ -1,29 +1,51 @@
 {
   "name": "web",
   "version": "2.0",
-  "homepage": "http://thiagogre.github.io/web",
-  "scripts": {
-    "build": "rescript",
-    "clean": "rescript clean -with-deps",
-    "start": "rescript build -w",
-    "dev": "concurrently \"parcel ./src/index.html\" \"bsb -make-world -w\" ",
-    "deploy": "gh-pages -d dist"
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiagogre/web.git"
   },
+  "license": "Unlicense",
   "keywords": [
-    "rescript"
+    "reason-react",
+    "rescript-react",
+    "reasonml",
+    "bucklescript",
+    "rescript",
+    "react"
   ],
-  "author": "",
-  "license": "MIT",
+  "files": [
+    ".gitignore",
+    "bsconfig.json",
+    "README.md",
+    "snowpack.config.js",
+    "public/*",
+    "src/**/*.res",
+    "src/**/*.css",
+    "src/**/*.svg"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "snowpack build",
+    "clean": "rescript clean",
+    "start": "snowpack dev"
+  },
   "dependencies": {
     "@rescript/react": "^0.10.3",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "rescript": "*"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@jihchi/plugin-rescript": "^1.0.0",
     "@emotion/css": "^11.1.3",
-    "concurrently": "^6.2.0",
-    "gh-pages": "^3.2.3",
-    "parcel": "^2.0.0-beta.2"
+    "@snowpack/plugin-dotenv": "^2.1.0",
+    "@snowpack/plugin-react-refresh": "^2.5.0",
+    "@testing-library/react": "^11.2.7",
+    "chai": "^4.3.4",
+    "rescript": "^9.1.2",
+    "snowpack": "^3.4.0"
   }
 }

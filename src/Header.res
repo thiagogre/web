@@ -32,33 +32,29 @@ module Styles = {
   })
 }
 
+type item = {href: string, text: string}
+
+let items = [
+  {href: "home", text: "Home"},
+  {href: "about", text: "About"},
+  {href: "academic", text: "Academic"},
+  {href: "skills", text: "Skills"},
+  {href: "hobbies", text: "Hobbies"},
+  {href: "contact", text: "Contact"},
+]
+
 @react.component
 let make = () => {
+  let content = Belt.Array.map(items, item => {
+    <li className=Styles.list>
+      <a className=Styles.item href={`#${item.href}`}> {React.string(item.text)} </a>
+    </li>
+  })
+
   <header className=Styles.container>
     <div className=Styles.row>
       <h1> {`thiagogre`->React.string} </h1>
-      <nav>
-        <ul className=Styles.list>
-          <li className=Styles.list>
-            <a className=Styles.item href="#home"> {`Home`->React.string} </a>
-          </li>
-          <li className=Styles.list>
-            <a className=Styles.item href="#about"> {`About`->React.string} </a>
-          </li>
-          <li className=Styles.list>
-            <a className=Styles.item href="#training"> {`Academic`->React.string} </a>
-          </li>
-          <li className=Styles.list>
-            <a className=Styles.item href="#skills"> {`Skills`->React.string} </a>
-          </li>
-          <li className=Styles.list>
-            <a className=Styles.item href="#hobbies"> {`Hobbies`->React.string} </a>
-          </li>
-          <li className=Styles.list>
-            <a className=Styles.item href="#contact"> {`Contact`->React.string} </a>
-          </li>
-        </ul>
-      </nav>
+      <nav> <ul className=Styles.list> {React.array(content)} </ul> </nav>
     </div>
   </header>
 }
