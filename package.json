@@ -1,12 +1,13 @@
 {
   "name": "web",
   "version": "2.0",
+  "homepage": "http://thiagogre.github.io/web",
   "scripts": {
     "build": "rescript",
     "clean": "rescript clean -with-deps",
     "start": "rescript build -w",
-    "dev": "concurrently \"parcel ./public/index.html\" \"bsb -make-world -w\" ",
-    "deploy": "rescript && gh-pages -d dist"
+    "dev": "concurrently \"parcel ./src/index.html\" \"bsb -make-world -w\" ",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "rescript"
